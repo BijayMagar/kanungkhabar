@@ -1,0 +1,49 @@
+body{
+	margin:0.5%;font-size: 18px;background: gray;font-family: tahoma;
+}
+h1,h2,h3,h4,h5,h6,p{ 
+	margin:0; 
+}
+
+header{
+	background: blue;color: white;text-align: center;padding: 3%;
+}
+
+section{
+	background: white;color: white;
+	display: flex;flex-direction: row;
+}
+.sidebar{
+	background: red;width: 23%;padding: 1%;
+}
+.main{
+	float: left;width: 73%;padding: 1%;
+	background: green;
+}
+
+footer{
+	padding: 2%;
+	background: blue;display: flex;flex-direction: row;color: white
+}
+.copyright{
+	width: 50%;
+}
+.contact{
+	width: 50%;text-align: right;
+}
+
+@media (max-width: 600px){
+	section,footer{
+		flex-direction: column;
+	}
+	.sidebar,.main{
+		padding:8% 0;
+		text-align: center;
+		width: 98%;margin-bottom: 3%;
+	}
+	.copyright,.contact{
+		text-align: center;
+		width: 96%;margin-bottom: 3%;
+	}
+}
+
